@@ -59,18 +59,31 @@
 
     <div id="Ad-hoc-Query">
         <b>Ad-hoc Query:<br></b>
-        <b>Please enter your query here:</b>
-        <form id="queryForm" action="your_action_url_here" method="post">
-            <select id="action" name="action">
-                <option value="select">SELECT</option>
-                <option value="insert into">INSERT INTO</option>
-                <option value="update">UPDATE</option>
-                <option value="delete">DELETE FROM</option>
-            </select>
-            <input size="30" name="query" type="text">
-            <br>
-            <input value="Clear" type="reset">
-            <input value="Submit" type="submit">
+        <form method="POST" action="ad-hoc.php">
+            <table>
+              <tbody><tr>
+                <td align="right">
+                  <strong>Please enter your query here<br></strong>
+                </td>
+                <td>
+                  <select id="action" name="action">
+                  <option value="select">SELECT</option>
+                  <option value="insert into">INSERT INTO</option>
+                  <option value="update">UPDATE</option>
+                  <option value="delete from">DELETE FROM</option>
+                  </select>
+                  <input size="30" name="query" type="text">
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <input value="Clear" type="reset">
+                </td>
+                <td>
+                  <input value="Submit" type="submit">
+                </td>
+              </tr>
+            </tbody></table>
         </form>
     </div>
     
